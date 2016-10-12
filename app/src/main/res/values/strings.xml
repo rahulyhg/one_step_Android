@@ -8,12 +8,25 @@
     <string name="register_string">Register</string>
     <string name="login_string">Login</string>
     <string name="home_string">Home</string>
+    <string name="apply_string">Apply</string>
 
     <string name="technical_issue_string">Something went wrong, Please try again later!</string>
 
     <string name="username_validation">Please enter valid Username</string>
     <string name="password_validation">Please enter valid Password</string>
     <string name="no_internet_string">You are running offline!</string>
+
+    <!--Validation Messages -->
+    <string name="email_validation">Please enter valid Email Id!</string>
+    <string name="alter_phone_validation">Please enter valid alternate phone number!</string>
+    <string name="phone_validation">Please enter valid phone number!</string>
+    <string name="zipcode_validation">Please enter valid Zip Code!</string>
+    <string name="address_validation">Please enter valid address!</string>
+    <string name="clientname_validation">Please enter valid client name!</string>
+    <string name="projectname_validation">Please enter valid project name!</string>
+    <string name="country_validation">Please select your country!</string>
+    <string name="state_validation">Please select your state!</string>
+    <string name="city_validation">Please select your city!</string>
 
         <string-array name="spinner_hrs">
             <item>1</item>

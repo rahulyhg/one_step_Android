@@ -28,6 +28,12 @@
         <activity
             android:name=".activities.HomeScreenActivity"
             android:label="@string/home_string" />
+        <activity
+            android:name=".activities.AddRoomActivity"
+            android:label="Internal Estimate" />
+        <activity
+            android:name=".activities.NewProjectActivity"
+            android:label="Create New Project" />
     </application>
 
 </manifest>

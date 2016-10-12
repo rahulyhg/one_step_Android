@@ -10,9 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.os.onestep.activities.AddRoomActivity;
 import com.os.onestep.activities.HomeScreenActivity;
 import com.os.onestep.activities.RegisterActivity;
 import com.os.onestep.utilities.Constants;
+import com.os.onestep.utilities.SharedPreferenceUtils;
 import com.os.onestep.utilities.dialogutils.DialogUtils;
 import com.os.onestep.utilities.httpconnection.ConnectionManager;
 import com.os.onestep.utilities.httpconnection.NetworkUtility;
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         JSONObject responseObject = new JSONObject(result);
         String resCodeString = responseObject.getString(Constants.SUCCESS_KEY);
         if (!"0".equals(resCodeString)) {
+            SharedPreferenceUtils.setLocalStorage("USERNAME", userNameText.getText().toString(), this);
+            SharedPreferenceUtils.setLocalStorage("PASSWORD", passwordText.getText().toString(), this);
             JSONArray userArray = responseObject.getJSONArray("user");
             JSONObject userObject = userArray.getJSONObject(0);
             Intent homeIntent = new Intent(this, HomeScreenActivity.class);
@@ -96,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, RegisterActivity.class));
                 break;
             case R.id.loginButton:
-                if(checkUser()) {
+                if (checkUser()) {
                     makeHttpCall();
                 }
                 break;
