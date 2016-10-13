@@ -1,6 +1,7 @@
 package com.os.onestep.activities;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -466,6 +467,7 @@ public class NewProjectActivity extends AppCompatActivity implements View.OnClic
                     JSONObject resultObject = new JSONObject(result);
                     DialogUtils.showalert(resultObject.getString("message"), NewProjectActivity.this);
                     SharedPreferenceUtils.setLocalStorage(Constants.PROJECT_ID, resultObject.getString(Constants.ID_KEY), NewProjectActivity.this);
+                    startActivity(new Intent(NewProjectActivity.this, EstimationCategoryActivity.class));
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
