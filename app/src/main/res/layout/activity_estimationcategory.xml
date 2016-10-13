@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:weightSum="1"
+        android:background="@color/mdtp_white">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_internalestimate"
+            android:layout_weight="0.167"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textColor="@color/mdtp_white"
+            android:text="Internal Estimates"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_internalnotes"
+            android:layout_weight="0.167"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textColor="@color/mdtp_white"
+            android:text="Internal Notes"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_externalestimate"
+            android:layout_weight="0.167"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textColor="@color/mdtp_white"
+            android:text="External Estimates"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_externalnotes"
+            android:layout_weight="0.167"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textColor="@color/mdtp_white"
+            android:text="External Notes"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_cab_off"
+            android:layout_weight="0.167"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textColor="@color/mdtp_white"
+            android:text="Cab-Off"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_hrstracking"
+            android:layout_weight="0.167"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textColor="@color/mdtp_white"
+            android:text="Actual Hours Tracking"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>
