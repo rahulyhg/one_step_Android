@@ -34,6 +34,13 @@
         <activity
             android:name=".activities.NewProjectActivity"
             android:label="Create New Project" />
+        <activity
+            android:name=".activities.EstimationCategoryActivity"
+            android:label="Estimation Category" />
+        <activity
+            android:name=".activities.InternalNotesActivity"
+             />
+        <activity android:name=".activities.AddNotesActivity"></activity>
     </application>
 
 </manifest>
